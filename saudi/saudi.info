@@ -1,0 +1,14 @@
+name = Saudi
+description = قالب الدورة.
+backdrop = 1.x
+type = theme
+
+settings[saudi_cdn] = 5.0.1
+settings[saudi_font_awesome] = 4.4.0
+settings[saudi_container] = container
+settings[saudi_navbar_position] = static-top
+settings[saudi_navbar_menu_position] = navbar-left
+
+stylesheets[all][] = css/style.css
+
+
