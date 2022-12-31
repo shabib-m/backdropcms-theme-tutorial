@@ -1,0 +1,351 @@
+/* Navbar + admin-bar fixes */
+body.navbar-is-fixed-bottom{
+  padding-bottom:50px!important;
+}
+
+body.navbar-is-fixed-top {
+  padding-top:70px!important;
+}
+
+body.navbar-is-fixed-top-padding{
+  padding-top:70px!important;
+}
+
+body div#admin-bar{
+  z-index:1600;
+}
+
+body.navbar-admin-bar.navbar-is-fixed-top .navbar-fixed-top  {
+  padding-top: 33px;
+}
+
+/* Logo fixes to meet navbar requirements by size. */
+.navbar-brand img{
+  height: 40px;
+  float: left;
+  margin-top: -10px;
+  padding-right: 10px;
+}
+
+ul li.collapsed,ul li.expanded,ul li.leaf{
+  list-style:none;list-style-image:none;
+}
+
+/* Form style fixes. */
+html.js fieldset.collapsed{
+  height:auto;
+}
+
+fieldset legend.card-header{
+  float:left;line-height:1em;margin:0;
+}
+
+fieldset .panel-body{
+  clear:both;
+}
+
+fieldset .card-header a.panel-title{
+  color:inherit;display:block;margin:-10px -15px;padding:10px 15px;
+}
+
+fieldset .card-header a.panel-title:hover{
+  text-decoration:none;
+}
+
+.input-group span.input-group-addon {
+  min-width: 100px;
+}
+
+.contact-site-form span.input-group-addon {
+  min-width: 150px;
+}
+
+.input-group textarea {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 0;
+}
+
+
+.form-control.required::-webkit-input-placeholder { color: rgba(255, 0, 14, 0.68); }
+.form-control.required:-moz-placeholder { color: rgba(255, 0, 14, 0.68); }
+.form-control.required::-moz-placeholder { color: rgba(255, 0, 14, 0.68); }
+.form-control.required:-ms-input-placeholder { color: rgba(255, 0, 14, 0.68); }
+
+.form-item input.error, .form-item textarea.error, .form-item select.error {
+  border: 1px solid red;
+}
+
+.checkbox input[type=checkbox], .checkbox-inline input[type=checkbox], .radio input[type=radio], .radio-inline input[type=radio] {
+  margin-left: 0px;
+}
+
+.form-actions .btn {
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+/* Table style fixes. */
+th.checkbox,td.checkbox,th.radio,td.radio{
+  display:table-cell;
+}
+
+tr.even {
+  background-color: transparent;
+}
+
+.sticky-header th {
+  padding: 8px;
+}
+
+/* Vertical tab fixes. */
+.vertical-tabs {
+  position: relative;
+  margin: 1em 0;
+  border: 1px solid #bbbbbb;
+  background: #ffffff;
+}
+@media (min-width: 48em) {
+  .vertical-tabs {
+    padding: 0 0 0 15em; /* LTR */
+  }
+  [dir="rtl"] .vertical-tabs {
+    padding: 0 15em 0 0;
+  }
+  .vertical-tabs:before {
+    content: '';
+    position: absolute;
+    left: 0; /* LTR */
+    top: 0;
+    z-index: 0;
+    width: 15em;
+    height: 100%;
+    background: #ddd;
+  }
+  [dir="rtl"] .vertical-tabs:before {
+    left: auto;
+    right: 0;
+  }
+}
+.vertical-tabs-list {
+  position: relative;
+  z-index: 1;
+  display: none;
+  width: 15em;
+  border-top: 1px solid #bbbbbb;
+  padding: 0;
+}
+ @media (min-width: 48em) {
+  .vertical-tabs-list {
+    display:block;
+    float: left; /* LTR */
+    margin: -1px 0 -1px -15em; /* LTR */
+  }
+   [dir="rtl"] .vertical-tabs-list {
+    margin-left: 0;
+    margin-right: -15em;
+    float: right;
+  }
+}
+.vertical-tab-item {
+  background-color: #f7f7f9;
+}
+
+.vertical-tab-link {
+  color: black;
+}
+.vertical-tab-link span {
+  color: #555;
+}
+
+.vertical-tab-link:focus strong,
+.vertical-tab-link:active strong,
+.vertical-tab-link:hover strong,
+.vertical-tab-link:focus .fieldset-legend,
+.vertical-tab-link:active .fieldset-legend,
+.vertical-tab-link:hover .fieldset-legend {
+  text-decoration: none;
+  outline: none;
+}
+.vertical-tab-item:focus,
+.vertical-tab-item:active,
+.vertical-tab-item:hover,
+.vertical-tab-item:focus,
+.vertical-tab-item:active,
+.vertical-tab-item:hover{
+  background-color: white;
+}
+
+.vertical-tabs-pane .fieldset-wrapper {
+  padding: 1em;
+}
+
+a.fieldset-title,
+a.fieldset-title:focus,
+a.fieldset-title:hover {
+  text-decoration: none;
+}
+
+/* Fix drop button style in admin area. */
+.dropbutton .dropbutton-action > * {
+  padding: 6px 12px;  
+}
+
+.dropbutton .dropbutton-action a,
+.dropbutton .dropbutton-action a:hover
+{
+  border: none;
+}
+
+/* Fix Hanle for drag&drop. */
+div.handle {
+  box-sizing: content-box;
+}
+
+/* Fix tabs. */
+div.tabs {
+  padding-bottom: 10px;
+}
+
+ul.action-links i.fa {
+  padding-right: 10px;
+}
+nav.tabs .nav-tabs a {
+  display: block;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+}
+
+
+/* Fix icons for collapsibel fieldset. */
+.js fieldset.collapsible .fieldset-title {
+  background: none;
+  padding-left: 0px;
+}
+
+.js fieldset.collapsible .fieldset-title:before {
+  content: "\f0d7";
+  font-family: 'Fontawesome';
+  font-style: normal;
+  font-size: 25px;
+  padding-right: 10px;
+}
+
+.js fieldset.collapsed .fieldset-title {
+  background: none;
+  padding-left: 0px;
+}
+
+.js fieldset.collapsed .fieldset-title:before {
+  content: "\f0da";
+  font-family: 'Fontawesome';
+  font-style: normal;
+  font-size: 25px;
+  padding-right: 10px;
+}
+
+/* Fix VIEWS UI. */
+.container-inline div {
+  display: inline-block;
+}
+
+.views-display-setting .label {
+  color: #666666;
+  font-size: 12px;
+}
+
+#views-ui-preview-form > div > div,
+#views-ui-preview-form > div > input {
+  float: none;  
+}
+
+.views-display-columns > * {
+  margin: 0;
+}
+.views-display-columns > *:first-child {
+  margin: 0px;
+  padding-left:15px;
+}
+
+.views-ui-display-tab-bucket {
+  padding-top: 0px;
+}
+
+.views-ui-display-tab-bucket .dropbutton li > * {
+  padding: 6px 12px;
+}
+
+.views-ui-display-tab-bucket + .views-ui-display-tab-bucket {
+  border-top: 1px solid #ddd;
+}
+
+/* Fix page title padding. */
+h1.page-title {
+  padding-bottom: 15px;
+}
+
+/* Style user pic. */
+.user-picture img {
+  border: 1px solid #e5e7e8;
+  padding: 1px; 
+}
+
+/* Style nodes and coments in twitter style. */
+.view-mode-teaser,
+.comment {
+  padding-bottom: 15px;
+  padding-top: 15px;
+  margin-top: 0px;
+  border-bottom: 1px dashed #efefef;
+}
+
+/* Add spacing for pager. */
+ul.pager {
+  padding-top: 20px;
+}
+
+/* Fixing problem with width of container */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1170px;
+  }
+}
+
+.navbar-is-fixed .l-header {
+/*  margin-top: 10px;*/
+}
+
+/* Navbar too narrow out of box */
+#navbar .container {
+  padding: 10px 20px;
+}
+
+img {
+  margin: 20px 0;
+}
+
+footer, .block-system-main-menu {
+  display: block;
+  padding: 20px 0px;
+}
+
+/* Force password field to be full width */
+span.password-toggle-wrapper {
+  width: 100%;
+}
+
+/* Fixes a conflict between Bootstrap and the admin bar */
+
+#admin-bar .dropdown li > a, 
+#admin-bar .dropdown li > span {
+  margin-bottom: 0;
+}
+
+/* Overrides for specific Bootswatch themes */
+
+/* Cyborg */
+
+.cyborg .menu-dropdown a {
+  color: #888888;
+}
